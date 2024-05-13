@@ -1,12 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@600;700;900&display=swap"
+      rel="stylesheet"
+    />
   <link rel="stylesheet" href="styles.css" />
   <title>Festa Junina PSI</title>
 </head>
 <body>
-  <H1>Hello World!</H1>
+  <audio autoplay controls>
+    <source src="./audio/Quadrilha.mp3" type="audio/mpeg">
+    Your browser does not support the audio tag.
+  </audio>
+  <section id="hero">
+    <div class="bumpkin">
+      <img src="./images/bumpkin.png" alt="" />
+    </div>
+    <div class="hero-cta">
+      <h1>Festa Junina PSI</h1>
+      <p>Ocê num podi perdê esse rasta pé.
+        <br> Esperamo ocêis tudo!</p>
+      <a href="#cards" class="button-down">
+        <img src="./images/arrow-down.svg" alt="" />
+      </a>
+      <br>
+    </div>
+  </section>
+  <section id="cards">
+    <div class="card">
+      <img src="./images/bonfire.svg" alt="" />
+      <div class="card-text">
+        <h3>28/06 as 15:30</h3>
+        <p>
+          É chegada a mió época do ano, sô! É tempo de preparar a fogueira, pendurar as bandeirinhas e beber quentão!
+        </p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./images/bonfire.svg" alt="" />
+      <div class="card-text">
+        <h3>Vem com nóis</h3>
+        <p>
+          Afinal, festa junina só acontece uma vez ao ano, né? Por isso, nós contamos com a sua presença para encher nosso arraiá de alegria!
+        </p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./images/bonfire.svg" alt="" />
+      <div class="card-text">
+        <h3>Esquecê não ô</h3>
+        <p>
+          Bota a sua mió roupa caipira e traga um prato de doce ou sargado.
+        </p>
+      </div>
+    </div>
+  </section>
+  <section id="contact">
+    <form 
+    action="https://formsubmit.co/matheus.dev23@gmail.com" 
+    method="POST"
+    >
+      <h2>Confirmar Presença</h2>
+      <fieldset>
+        <div class="input-wrapper">
+          <input id="name" type="text" name="text" placeholder="Qual seu nome?" required />
+        </div>
+        <div class="input-wrapper">
+          <input id="email" type="email" name="email" placeholder="Qual seu Email?" required />
+        </div>
+        <div class="input-wrapper">
+          <textarea id="food" name="textarea" placeholder="Fala qual o prato que vai levar..." required ></textarea>
+        </div>
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="http://localhost:5500/obrigado.html">
+      </fieldset>
+
+      <button class="button" type="submit">Enviar Mensagem</button>
+    </form>
+    <div class="stars">
+     
+    </div>
+  </section>
+  <footer>
+    <p>&copy; 2024 - Feito com 🧡</p>
+  </footer>
 </body>
 </html>
