@@ -249,7 +249,7 @@ footer p {
 
 /* @media */
 
-@media (min-width: 1240px) {
+@media (min-width: 940px) {
   /* Global Styles */
   h1 {
     font-size: 5.8rem;
